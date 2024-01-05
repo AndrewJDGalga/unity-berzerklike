@@ -3,6 +3,10 @@
 
 !Assets/
 !Scenes/
+!prefabs/
+!scripts/
 !.gitignore
 !README.MD
 !*.unity
+!*.prefab
+!*.cs
