@@ -2,5 +2,7 @@
 **/*
 
 !Assets/
+!Scenes/
 !.gitignore
 !README.MD
+!*.unity
