@@ -5,8 +5,11 @@
 !Scenes/
 !prefabs/
 !scripts/
+!InputS/
 !.gitignore
 !README.MD
 !*.unity
 !*.prefab
 !*.cs
+!*.inputactions
+!InputSystem.inputsettings.asset
