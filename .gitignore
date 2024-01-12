@@ -5,7 +5,7 @@
 !Scenes/
 !prefabs/
 !scripts/
-!InputS/
+!inputsystem/
 !.gitignore
 !README.MD
 !*.unity

@@ -6,17 +6,19 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float speed = 5.0f;
-    
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    Rigidbody2D _rb;
+    Vector2 _moveDirection;
+
+    void Start(){
+        _rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        _rb.velocity = _moveDirection * speed;
+    }
+
+    void OnMove(InputValue val) {
+        _moveDirection = val.Get<Vector2>();
     }
 }
