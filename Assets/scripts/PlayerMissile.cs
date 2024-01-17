@@ -9,12 +9,18 @@ public class PlayerMissile : MonoBehaviour
     [SerializeField] float moveSpeed;
     public Vector2 Direction {
         set {
-            if(value != Vector2.zero) direction = value;
+            if(value != Vector2.zero) _direction = value;
         }
-        get => direction;
+        get => _direction;
     }
-    Vector2 direction;
-    void Update() {
+    Vector2 _direction;
+    Rigidbody2D _rb;
 
+    void Start() {
+        _rb = GetComponent<Rigidbody2D>();
+    }
+
+    void FixedUpdate() {
+        _rb.velocity = Direction * moveSpeed;
     }
 }

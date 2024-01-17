@@ -402,4 +402,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d601a1ba76133da469c6d4290c3d5ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  missileRef: {fileID: 1957062946721063804, guid: cffae7fefdc8c014dba84dbd909c0ad9, type: 3}
+  missileSpawn: {fileID: 2477338379346042792}
   speed: 8
